@@ -1,0 +1,87 @@
+.image-container {
+  width: 100%;
+  padding: 5px; /*Espacio entre imagenes*/
+}
+
+.image-container img {
+  width: 100%;
+  height: 150px; /*Asegura que su imagen mantenga su relacion de aspecto*/
+  border: 1px solid #ccc; /*Borde opcional para resaltar las imagenes*/
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.card-img-top {
+  flex: 1;
+  width: 100%;
+  height: auto;
+  /* object-fit: cover; Ajusta la imagen para cubrir todo el espacio disponible */
+}
+
+.card-body {
+  display: flex; /* flexbox para alinear los elementos internos */
+  flex-direction: column;
+  padding: 10px;
+  align-items: center; /* Centra verticalmente el contenido */
+}
+
+.card-text {
+  margin-bottom: 10px;
+}
+
+.btn-outline-primary {
+  border-width: 10px;
+}
+
+.btn {
+  margin-top: 10px;
+}
+
+.text-opacity-75 {
+  opacity: 0.75; /* Opacidad del 75% (valores válidos entre 0 y 1) */
+}
+
+/* Estilos para hacer responsive */
+@media (max-width: 768px) {
+  .card {
+    margin: 10px auto;
+    width: 300px;
+  }
+}
+
+@media (max-width: 576px) {
+  .card {
+    width: 200px;
+  }
+}
+
+/* Estilos para el modal */
+.modal-content {
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.modal-Body {
+  padding: 20px;
+  text-align: center;
+}
+
+.modal-footer {
+  justify-content: center;
+  border-top: none; /* Elimina el borde superior del footer del modal */
+}
+
+.modal-footer button {
+  margin: 5px;
+  padding: 10px 20px;
+  border-radius: 8px;
+}

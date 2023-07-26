@@ -1,0 +1,26 @@
+.title {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.4); /* Sombra del texto */
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(
+    to bottom,
+    #d4f0d1,
+    #a5c595
+  ); /* Gradiente de colores */
+  min-height: 100vh; /* Para que el contenedor ocupe al menos el 100% de la altura de la ventana */
+  padding: 20px;
+  
+}
+
+

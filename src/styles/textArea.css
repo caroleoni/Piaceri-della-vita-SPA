@@ -1,0 +1,43 @@
+.button-container {
+  display: flex;
+  justify-content: center;
+  /* margin-top: 20px; */
+  margin-bottom: 20px;
+}
+
+.btn-outline-primary {
+  margin: 5px;
+  padding: 10px 20px;
+  border-width: 2px;
+  border-radius: 8px;
+  /* background-color: #a0c78e !important; */
+  background-color: rgba(36, 62, 146, 0.2) !important; /*Color azul pastel con transparencia */
+}
+
+.text-area {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 500px;
+  margin: 0px auto;
+  margin-top: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  resize: vertical; /* Permite redimensionar verticalmente el TextArea */
+}
+
+/* Estilos para hacer el textArea responsive */
+@media (max-width: 768px) {
+  .text-area {
+    width: 300px;
+  }
+}
+
+@media (max-width: 576px) {
+  .text-area {
+   width: 200px;
+  }
+}
