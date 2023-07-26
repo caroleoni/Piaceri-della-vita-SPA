@@ -23,7 +23,7 @@ const images = [
   {
     id: 4,
     src: image4,
-    description: "Masajes relajantes o descontracturantes",
+    description: "Elegi masajes relajantes o descontracturantes",
   },
   {
     id: 5,
