@@ -13,14 +13,14 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(
-    to bottom,
-    #d4f0d1,
-    #a5c595
-  ); /* Gradiente de colores */
+  background: linear-gradient(180deg, #d5edc2, #d1ffaf);
   min-height: 100vh; /* Para que el contenedor ocupe al menos el 100% de la altura de la ventana */
   padding: 20px;
-  
 }
 
-
+.row {
+  display: flex;
+  justify-content: center; /* Alinea las cards en el centro horizontal */
+  flex-wrap: wrap; /* Permite que las cards se ajusten automáticamente en varias líneas */
+  margin: -10px; /* Elimina el espacio entre las cards */
+}

@@ -23,6 +23,7 @@ export const TextArea = () => {
 
   return (
     <>
+      {/* Textarea para mostrar el contenido del archivo "home.json" */}
       <textarea
         className="text-area fst-italic"
         value={textArea}
@@ -44,7 +45,6 @@ export const TextArea = () => {
         >
           Limpiar Texto
         </button>
-        {/* Textarea para mostrar el contenido del archivo "home.json" */}
       </div>
     </>
   );

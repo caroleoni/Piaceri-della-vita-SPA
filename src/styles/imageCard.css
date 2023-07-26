@@ -1,3 +1,7 @@
+.card-container {
+  cursor: pointer;
+}
+
 .image-container {
   width: 100%;
   padding: 5px; /*Espacio entre imagenes*/
@@ -8,7 +12,6 @@
   height: 150px; /*Asegura que su imagen mantenga su relacion de aspecto*/
   border: 1px solid #ccc; /*Borde opcional para resaltar las imagenes*/
   object-fit: cover;
-  cursor: pointer;
 }
 
 .card {
@@ -18,12 +21,14 @@
   border-radius: 8px;
   overflow: hidden;
   box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+  height: 200px;
+  margin-bottom: 20px; /*Ajusta el espacio entre las cards */
 }
 
 .card-img-top {
   flex: 1;
   width: 100%;
-  height: auto;
+  height: 150px;
   /* object-fit: cover; Ajusta la imagen para cubrir todo el espacio disponible */
 }
 
@@ -51,16 +56,34 @@
 }
 
 /* Estilos para hacer responsive */
+@media (max-width: 1198px) {
+  .card {
+    margin: 5px auto;
+    width: 300px;
+    height: 200px;
+  }
+}
+
+@media (max-width: 992px) {
+  .card {
+    margin: 5px auto;
+    width: 300px;
+    height: 200px;
+  }
+}
+
 @media (max-width: 768px) {
   .card {
     margin: 10px auto;
     width: 300px;
+    height: 200px;
   }
 }
 
 @media (max-width: 576px) {
   .card {
     width: 200px;
+    height: 200px;
   }
 }
 

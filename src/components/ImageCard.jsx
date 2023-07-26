@@ -62,6 +62,7 @@ export const ImageCard = ({ image }) => {
       okButton.style.padding = "10px 20px";
       okButton.style.borderRadius = "8px";
       okButton.style.backgroundColor = "rgba(143, 180, 228, 0.1)";
+      okButton.style.cursor = "pointer";
       okButton.onclick = handleOk;
       containerButton.appendChild(okButton);
 
@@ -71,6 +72,7 @@ export const ImageCard = ({ image }) => {
       closeButton.style.padding = "10px 20px";
       closeButton.style.borderRadius = "8px";
       closeButton.style.backgroundColor = "rgba(143, 180, 228, 0.2)";
+      closeButton.style.cursor = "pointer";
       closeButton.onclick = () => popupWindow.close();
       containerButton.appendChild(closeButton);
     } else {
@@ -84,8 +86,8 @@ export const ImageCard = ({ image }) => {
   return (
     <>
       <div className="card d-flex flex-column justify-content-between">
-        <div className="card-container">
-          <div onClick={handleClickPopup}>
+        <div className="card-container" onClick={handleClickPopup}>
+          <div>
             <img
               className="card-img-top"
               src={image.src}
